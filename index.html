@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD</title>
+</head>
+
+<body>
+  <div class="container ">
+    <div class="row py-5">
+      <div class="col-md-6 col-sm-12 m-auto">
+        <label for="Nn">Prodect Name</label>
+        <input type="text" id="Nn" class="form-control mb-3">
+      </div>
+      <div class="col-md-6 col-sm-12 m-auto">
+        <label for="Pn">Prodect Price</label>
+        <input type="number" id="Pn" class="form-control mb-3 ">
+      </div>
+      <div class="col-md-6 col-sm-12  m-auto ">
+        <label for="Cn">Prodect Category</label>
+        <input type="text" id="Cn" class="form-control mb-3">
+      </div>
+      <div class="col-md-6 col-sm-12  m-auto ">
+        <label for="Dn">Prodect Discription</label>
+        <textarea name="" id="Dn" cols="80" rows="2" class="form-control"></textarea>
+      </div>
+      <div class="col-sm-4">
+        <button onclick="addprodect()" id="addprodect" class="btn btn-outline-success mt-3 text-white">Add
+          prodect</button>
+
+      </div>
+      <div class="col-md-12">
+        <input onkeyup="searchelement(this.value)" id="search" type="text" class="form-control my-3"
+          placeholder="Search...." />
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <table class="table text-center text-white">
+      <thead>
+        <th id="Index">Index</th>
+        <th id="Name">prodect Name</th>
+        <th id="Price">prodect Price</th>
+        <th id="Category">prodect Category</th>
+        <th id="Discription">prodect Discription</th>
+        <th>Updata</th>
+        <th>Delet</th>
+      </thead>
+      <tbody id="tbody" class="text-white">
+      </tbody>
+    </table>
+
+  </div>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
